@@ -1,6 +1,11 @@
 package com.df.prime.model;
 
+import jakarta.annotation.PostConstruct;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Component;
+
+import java.util.ArrayList;
+import java.util.List;
 
 @Component
 public class WDModel {
@@ -18,10 +23,12 @@ public class WDModel {
     private int time;
     private boolean availability= false;
 
+
     public WDModel(int time, boolean availability) {
         this.time = time;
         this.availability = availability;
     }
+
 
     public boolean isAvailability() {
         return availability;
