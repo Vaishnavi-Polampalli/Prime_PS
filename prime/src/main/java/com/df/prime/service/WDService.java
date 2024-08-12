@@ -16,7 +16,7 @@ public class WDService {
     private static final Logger logger = LogManager.getLogger(WDService.class);
 
    List<WDModel> machines= new ArrayList<>(Arrays.asList(new WDModel(1,false),
-            new WDModel(2, true),
+            new WDModel(2, false),
             new WDModel(3, false),
             new WDModel(4, false),
             new WDModel(5, false),
